@@ -1,2 +1,2 @@
-# AegisubScriptsFactory
-Collection of script for Aegisub
+# Karaoke Utilities
+Scripts and functions for karaoke maker
