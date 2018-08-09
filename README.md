@@ -1,2 +1,2 @@
 # Karaoke Utilities
-Scripts and functions for karaoke maker
+Stuffs for karaoke makers and lyrics lovers
