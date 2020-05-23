@@ -19,13 +19,13 @@ function center_subs(subs, sel)
 		local l = subs[sel[i]]
 		
 		-- Si le style de la ligne porte le nom désiré :
-		if l.style == "tiret" then
+		if l.style == "tiret" or l.actor == "tiret" then
 			-- On récupère un tableau de deux valeurs que l'on transforme en type String
 			-- La ligne doit obligatoirement avoir un \N
 			-- TODO : Faire que ça plante pas si pas de \N
 			local t = {} ; t = mysplit(l.text, "\\N")			
-			local t1 = tostring(t[1])
-			local t2 = tostring(t[2])
+			local t1 = tostring(t[1]:gsub("{[^}]+}", ""))
+			local t2 = tostring(t[2]:gsub("{[^}]+}", ""))
 			
 			-- On récupère les dimensions du texte
 			-- ==============================================================================
